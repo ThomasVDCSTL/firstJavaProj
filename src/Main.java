@@ -17,19 +17,23 @@
 //}
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int cartons = 0;
         int capaciteCamion = 9;
         int x = 0;
-        while (cartons<34){
+        while (cartons < 34) {
             x++;
             cartons++;
-            if (cartons%capaciteCamion==0){
-                System.out.println("un voyage de "+x+" cartons");
-                x=0;
+            if (cartons % capaciteCamion == 0) {
+                System.out.println("un voyage de " + x + " cartons");
+                x = 0;
             }
         }
-        System.out.println("un voyage de "+x+" cartons");
+        System.out.println("un voyage de " + x + " cartons");
+    }
+
+    public static void machin(String[] args) {
+        System.out.println("Hello world");
     }
 
 }
